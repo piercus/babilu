@@ -29,7 +29,7 @@ module Babilu
 
     def self.included(controller)
       controller.send(:after_filter, :set_locale_cookie)
-      controller.send(:after_filter, :generate_locale_javascript) if Rails.env.development?
+      controller.send(:after_filter, :generate_locale_javascript) #if Rails.env.development?
     end
 
   private
