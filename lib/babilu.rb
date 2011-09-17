@@ -40,7 +40,7 @@ module Babilu
 
     #In development mode, re-generate locale data on each request
     def generate_locale_javascript
-      if ::Rails.env == "developement"
+      if ::Rails.env == "development"
         Babilu.generate
       end
     end
